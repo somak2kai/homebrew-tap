@@ -5,23 +5,23 @@
 class Beats < Formula
   desc "Structural clustering and code intelligence for Go repositories."
   homepage "https://github.com/somak2kai/beats"
-  version "0.1.10"
+  version "0.1.11"
   license "MIT"
 
   depends_on "somak2kai/tap/jbeats"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/somak2kai/beats/releases/download/v0.1.10/beats_0.1.10_darwin_amd64.tar.gz"
-      sha256 "2534d834e8cda62d54c00e93bea3115519b594bebb716d81ea37982e8a68997c"
+      url "https://github.com/somak2kai/beats/releases/download/v0.1.11/beats_0.1.11_darwin_amd64.tar.gz"
+      sha256 "8247cac625f79f93789f5dbeef7489b81051f602a58c6d523f0c4884de42b120"
 
       define_method(:install) do
         bin.install "beats"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/somak2kai/beats/releases/download/v0.1.10/beats_0.1.10_darwin_arm64.tar.gz"
-      sha256 "184e63ca9cde7260f340d1e25c410b61c36ad659aad238400a441238962f6067"
+      url "https://github.com/somak2kai/beats/releases/download/v0.1.11/beats_0.1.11_darwin_arm64.tar.gz"
+      sha256 "2e38e0fc4dcdb8b72c284fde7dfa3407540fec3cb30218b69c147908a2ff20d4"
 
       define_method(:install) do
         bin.install "beats"
@@ -31,15 +31,15 @@ class Beats < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/somak2kai/beats/releases/download/v0.1.10/beats_0.1.10_linux_amd64.tar.gz"
-      sha256 "cc1677ec6efd5c46017cce489db172f8dd04428b2444da2451707a9dcc923b65"
+      url "https://github.com/somak2kai/beats/releases/download/v0.1.11/beats_0.1.11_linux_amd64.tar.gz"
+      sha256 "a6e1ffccf55be656c586178d2da84824258b8fd3a5c17d7c774b63f2e68e141d"
       define_method(:install) do
         bin.install "beats"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/somak2kai/beats/releases/download/v0.1.10/beats_0.1.10_linux_arm64.tar.gz"
-      sha256 "23f0b2694d48a5d4b1dcc62bd089aa98c9dd799b9ba799fd9d737ad4f06ace96"
+      url "https://github.com/somak2kai/beats/releases/download/v0.1.11/beats_0.1.11_linux_arm64.tar.gz"
+      sha256 "95fd1fde5f87941f3d13d9234e564bf6dd53cefbd15e12e982b141330c48a32c"
       define_method(:install) do
         bin.install "beats"
       end
