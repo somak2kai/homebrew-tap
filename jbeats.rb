@@ -4,12 +4,12 @@
 class Jbeats < Formula
   desc "Parses Java source files and emits per-method structural metadata as JSON"
   homepage "https://github.com/somak2kai/jbeats"
-  version "0.1.5"
+  version "0.1.6"
   license "MIT"
 
-  JBEATS_SHA256_DARWIN_ARM64 = "7668e269b64a692db35901ed1ba19ec0e861f5fb4569a523a15fb1134d338885"
-  JBEATS_SHA256_LINUX_AMD64  = "8c7d518ffc362fe9dc0b2fa1f5bb17c064ce0f5ffe7cf2d69817ee0907b507f8"
-  JBEATS_SHA256_LINUX_ARM64  = "f9893ec361f96dff88ba40b51b6c0f4c8124672837cdf27321d6d2c7eb79759e"
+  JBEATS_SHA256_DARWIN_ARM64 = "dc0d6626e39772ca852e204004246b961f0a634a2bda7f6c16bdf8c87ee738b4"
+  JBEATS_SHA256_LINUX_AMD64  = "56c9fb76d43009bb787d8d9d9782718cb3f4f2e50ec1ea419a82fcabf797acfb"
+  JBEATS_SHA256_LINUX_ARM64  = "f450060f690c2206e12cc4816653de0a104dbc64a9ecd98d5562bc2fb8f81460"
 
   on_macos do
     if Hardware::CPU.arm?
